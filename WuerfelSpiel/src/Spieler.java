@@ -1,7 +1,11 @@
 
+
+import Tools.IO.*;                          // Eingaben
+
+
 public class Spieler {
 	private String name;
-	private int [] augen = new int[5];
+	private int [] augen = new int[rundenanzahl];
 	private int anzahl;
 
 
