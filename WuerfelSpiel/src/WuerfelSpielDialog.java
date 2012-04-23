@@ -1,11 +1,16 @@
+import Tools.IO.*;
+
 
 public class WuerfelSpielDialog {
 
-	public String [] Spieler = new String[anzahl];
+	
 	
 
-System.out.println( "Mehrere Spieler würfeln hintereinander. Sieger ist der Spieler mit der höchsten Augensumme. 1. Variante: Alle Augen werden addiert. 2. Variante: Nur die geraden Augen werden addiert. 3. Variante: Alle Augen werden addiert, würfelt man eine Eins, wird die bis dahin erreichte Augensumme wieder gelöscht.");
-	
+System.out.println( "Mehrere Spieler würfeln hintereinander.");
+System.out.println( "Sieger ist der Spieler mit der höchsten Augensumme.");	
+System.out.println( "1. Variante: Alle Augen werden addiert.");
+System.out.println( "2. Variante: Nur die geraden Augen werden addiert.");
+System.out.println ( "3. Variante: Alle Augen werden addiert, würfelt man eine Eins, wird die bis dahin erreichte Augensumme wieder gelöscht.");
 	
 	
 private int anzahl = IOTools.readInteger
@@ -15,12 +20,15 @@ private int rundenanzahl = IOTools.readInteger
 private int variante = IOTools.readInteger
  				( "Bitte die gewünschte Variante 1,2 oder 3 eingeben eingeben!");
 
+public String [] Spieler = new String[anzahl]
 
-if (variante != 1 || variante != 2 || variante != 3)
+		
+		do 
 		{
 		int variante = IOTools.readInteger
 				( "Bitte die gewünschte Variante 1,2 oder 3 eingeben eingeben!");
 		}
+		while(variante != 1 || variante != 2 || variante != 3);
 
 
 public int getAnzahl() {
