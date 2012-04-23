@@ -2,6 +2,9 @@ import Tools.IO.*;
 
 public class WuerfelSpielDialog {
 
+private int rundenanzahl;
+private int anzahl;
+
 
 public static int setAnzahl() {
 	int anzahl = IOTools.readInteger( "Bitte die gewuenschte Spieleranzahl eingeben!  ");
@@ -18,17 +21,18 @@ public static int setVariante() {
 	int variante = IOTools.readInteger
 				( "Bitte die gewuenschte Variante 1,2 oder 3 eingeben eingeben!  ");
 	return variante;
-	
+}
+
+public int getRundenanzahl() {
+	return rundenanzahl;
+
+}
+
+public int getAnzahl() {
+	return anzahl;
 	}
 
-public static void setSpielerNamen()
-{
-	for( int k = 0; k < spieler.anzahl; k++)
-    {
-      System.out.println( "Spieler "+ (k + 1));
-      spieler[ k].name
-      = IOTools.readLine( "Wie ist Dein Vorname? ");
-    }
+
 
 public static void getSpielregeln() {
 	System.out.println( "Mehrere Spieler wuerfeln hintereinander.");

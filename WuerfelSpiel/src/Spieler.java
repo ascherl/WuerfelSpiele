@@ -3,7 +3,7 @@
 import Tools.IO.*;                          // Eingaben
 
 /**
- * Spieler fuer ein Würfelspiel.
+ * Spieler fuer ein Wuerfelspiel.
  */
 public class Spieler
 {
@@ -15,6 +15,11 @@ public class Spieler
  * Name des Spielers.
  */
   String name = "";
+  
+  
+  public String getName() {
+	  return name;
+  }
 
 
 
@@ -25,9 +30,7 @@ public class Spieler
  */
   public static void addSpieler()
   {
-                          // Einlesen der Spieleranzahl
-    int spielerAnzahl
-    = WuerfelSpielDialog.setAnzahl();
+                          
 
                   // Erzeugen eines Feldes von Spielern
     Spieler[] spieler = new Spieler[ WuerfelSpielDialog.setAnzahl()];
