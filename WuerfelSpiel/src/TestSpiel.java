@@ -16,16 +16,16 @@ public class TestSpiel {
 		
 		WuerfelSpielDialog.getSpielregeln();
 		
-		final int anzahl = WuerfelSpielDialog.getAnzahl();
+		final int anzahl = WuerfelSpielDialog.setAnzahl();
 		
-		final int rundenanzahl = WuerfelSpielDialog.getRundenanzahl();
+		final int rundenanzahl = WuerfelSpielDialog.setRundenanzahl();
 		
-		final int variante = WuerfelSpielDialog.getVariante();
+		final int variante = WuerfelSpielDialog.setVariante();
 		
 		
 		System.out.println(anzahl);
 		
-		int zahl = IOTools.readInteger("Was für eine Zahl? ");
+		int zahl = IOTools.readInteger("Was fuer eine Zahl? ");
 	}
 
 }

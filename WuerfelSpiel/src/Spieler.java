@@ -5,7 +5,7 @@ import Tools.IO.*;                          // Eingaben
 public class Spieler {
 	
 	private String name;
-	private int [] augen = new int[getRundenanzahl()];
+	private int [] augen = new int[rundenzahl];
 	
 
 	

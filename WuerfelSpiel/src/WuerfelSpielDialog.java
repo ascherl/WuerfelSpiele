@@ -3,18 +3,18 @@ import Tools.IO.*;
 public class WuerfelSpielDialog {
 
 
-public static int getAnzahl() {
+public static int setAnzahl() {
 	int anzahl = IOTools.readInteger( "Bitte die gewuenschte Spieleranzahl eingeben!  ");
 	return anzahl;
 	}
 
-public static int getRundenanzahl() {
+public static int setRundenanzahl() {
 	int rundenanzahl = IOTools.readInteger
 			( "Bitte die gewuenschte Rundenanzahl eingeben!  ");
 	return rundenanzahl;
 	}
 
-public static int getVariante() {
+public static int setVariante() {
 	int variante = IOTools.readInteger
 				( "Bitte die gewuenschte Variante 1,2 oder 3 eingeben eingeben!  ");
 	return variante;
