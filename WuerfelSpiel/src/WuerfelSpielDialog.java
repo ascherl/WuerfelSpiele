@@ -21,11 +21,6 @@ public static int getVariante() {
 	
 	}
 
-public static int setSpielerNamen {
-	for( int i = 0; i < WuerfelSpielDialog.getAnzahl(); i++){
-		spieler[ i] = new Spieler();
-	}
-}
 
 public static void getSpielregeln() {
 	System.out.println( "Mehrere Spieler wuerfeln hintereinander.");

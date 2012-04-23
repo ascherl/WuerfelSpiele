@@ -15,6 +15,14 @@ public class WuerfelSpiele {
 		spieler[ WuerfelSpielDialog.getAnzahl()];
 		
 		// Abfrage Spielernamen
+		
+		
+	   // Spieler erstellen
+		public static int setSpielerNamen {
+			for( int i = 0; i < WuerfelSpielDialog.getAnzahl(); i++){
+				spieler[ i] = new Spieler();
+			}
+		}
 	
 	public class wuerfeln {
 		
