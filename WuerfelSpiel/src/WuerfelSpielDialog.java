@@ -7,7 +7,7 @@ public class WuerfelSpielDialog {
 	
 
 System.out.println( "Mehrere Spieler würfeln hintereinander.");
-System.out.println( "Sieger ist der Spieler mit der höchsten Augensumme.");	
+System.out.println( "Sieger ist der Spieler mit der hoechsten Augensumme.");	
 System.out.println( "1. Variante: Alle Augen werden addiert.");
 System.out.println( "2. Variante: Nur die geraden Augen werden addiert.");
 System.out.println ( "3. Variante: Alle Augen werden addiert, würfelt man eine Eins, wird die bis dahin erreichte Augensumme wieder gelöscht.");
