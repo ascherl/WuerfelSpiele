@@ -1,6 +1,5 @@
 import Tools.IO.*;
 
-
 public class WuerfelSpielDialog {
 
 
