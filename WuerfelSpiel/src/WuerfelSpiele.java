@@ -1,3 +1,5 @@
+import Tools.IO.IOTools;
+
 /**
  * 
  * @author rudi
@@ -5,34 +7,38 @@
  */
 public class WuerfelSpiele {
 
-	
-	public class neuesSpiel {
+	public static void main(String[] args) {
 		
-		// Abfrage Spieleranzahl
-		WuerfelSpielDialog.setAnzahl();
+		neuesSpiel();
+				
+		int runden = WuerfelSpielDialog.getRundenAnzahl();
+
+	    for( int runde = 0; runde < runden; runde++) {
+	      System.out.println( "\nRunde: " + (runde + 1));
+
+	      for( int dran = 0; dran < WuerfelSpielDialog.getSpielerAnzahl; dran++)
+	      {
+	        System.out.println();
+	        IOTools.readLine( Spieler.name[ dran].getName + " wuerfeln (ENTER)");
+
+	        Spieler.name[ dran].augen[runde] = new Wuerfel();
+
+	        System.out.println( augen + " -> " + punkte);
+	      }
+
+	      System.out.println();
+	    }
 		
-		// SpielERfeld initialisieren
-		spieler[ WuerfelSpielDialog.getAnzahl()];
-		
-		// Abfrage Spielernamen
-		setSpielernamen
-		
-	   // Spieler erstellen
-		public static int set {
-			for( int i = 0; i < WuerfelSpielDialog.getAnzahl(); i++){
-				spieler[ i] = new Spieler();
-			}
-		}
-	
+}
+
 	public class wuerfeln {
 		
-		class wuefeln(Spieler name, int dran) {
-			Wuerfel wuerfel = new Wuerfel();
-			Spieler[dran].augen[runde] = wuerfel.getAugen();
-		}
+		Wuerfel wuerfel = new Wuerfel();
+	}
+
+	public static void neuesSpiel() {
+		new Spieler();
+		Spieler.addSpieler();
 	}
 	
-	public class auswertung {
-		
-	}
 }

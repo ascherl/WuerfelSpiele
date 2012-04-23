@@ -23,7 +23,7 @@ public class MitSpielerTest
     Wuerfel wuerfel = new Wuerfel();
 
 // Wuerfeln
-    int runden = 3;
+    int runden = getRundenAnzahl();
 
     for( int runde = 0; runde < runden; runde++)
     {

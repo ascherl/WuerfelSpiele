@@ -25,9 +25,6 @@ public class Spieler
  */
   public static void addSpieler()
   {
-                          // Einlesen der Spieleranzahl
-    int spielerAnzahl
-    = WuerfelSpielDialog.setAnzahl();
 
                   // Erzeugen eines Feldes von Spielern
     Spieler[] spieler = new Spieler[ WuerfelSpielDialog.setAnzahl()];

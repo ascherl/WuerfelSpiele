@@ -3,6 +3,7 @@ import Tools.IO.*;
 public class WuerfelSpielDialog {
 
 
+
 public static int setAnzahl() {
 	int anzahl = IOTools.readInteger( "Bitte die gewuenschte Spieleranzahl eingeben!  ");
 	return anzahl;
