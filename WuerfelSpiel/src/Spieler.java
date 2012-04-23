@@ -9,14 +9,7 @@ public class Spieler {
 	private int [] augen = new int[rundenzahl];
 	
 	
-public static void setSpielerNamen()
-{
-	for( int k = 0; k < spieler.anzahl; k++)
-    {
-      System.out.println( "Spieler "+ (k + 1));
-      spieler[ k].vorName
-      = IOTools.readLine( "Wie ist Dein Vorname? ");
-    }
+
 }
 	
 

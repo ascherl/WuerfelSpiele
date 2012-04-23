@@ -21,17 +21,14 @@ public static int setVariante() {
 	
 	}
 
-<<<<<<< HEAD
-public static String setSpielerNamen {
-	for( int i = 0; i < WuerfelSpielDialog.getAnzahl(); i++){
-		spieler[ i] = new Spieler();
-		
-
-		
-	}
-}
-=======
->>>>>>> branch 'master' of git://github.com/ascherl/WuerfelSpiele.git
+public static void setSpielerNamen()
+{
+	for( int k = 0; k < spieler.anzahl; k++)
+    {
+      System.out.println( "Spieler "+ (k + 1));
+      spieler[ k].name
+      = IOTools.readLine( "Wie ist Dein Vorname? ");
+    }
 
 public static void getSpielregeln() {
 	System.out.println( "Mehrere Spieler wuerfeln hintereinander.");
