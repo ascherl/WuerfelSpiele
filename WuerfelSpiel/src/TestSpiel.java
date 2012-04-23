@@ -11,13 +11,17 @@ public class TestSpiel {
 		// TODO Auto-generated method stub
 		String[] spieler = { "Heinz", "Kai-Uwe", "Paul-Werner"};
 		
-		
-		
-		Wuerfel wuerfel = new Wuerfel(1,6);
+	//	for(int i=0; i <spieler.length; i++){
+	//	}
 		
 		WuerfelSpielDialog.getSpielregeln();
 		
-		int anzahl = WuerfelSpielDialog.getAnzahl();
+		final int anzahl = WuerfelSpielDialog.getAnzahl();
+		
+		final int rundenanzahl = WuerfelSpielDialog.getRundenanzahl();
+		
+		final int variante = WuerfelSpielDialog.getVariante();
+		
 		
 		System.out.println(anzahl);
 		
