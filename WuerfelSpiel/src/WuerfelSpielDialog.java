@@ -22,7 +22,8 @@ public String [] Spieler = new String[anzahl];
 		
 
 
-public int getAnzahl() {
+public static int getAnzahl() {
+	int anzahl = IOTools.readInteger( "Bitte die gewünschte Spieleranzahl eingeben!");
 	return anzahl;
 	}
 
@@ -35,7 +36,7 @@ public int getVariante() {
 	
 	}
 
-public void getSpielregeln() {
+public static void getSpielregeln() {
 	System.out.println( "Mehrere Spieler würfeln hintereinander.");
 	System.out.println( " Sieger ist der Spieler mit der hoechsten Augensumme.");	
 	System.out.println( "1. Variante: Alle Augen werden addiert.");

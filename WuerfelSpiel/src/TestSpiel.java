@@ -11,10 +11,17 @@ public class TestSpiel {
 		// TODO Auto-generated method stub
 		String[] spieler = { "Heinz", "Kai-Uwe", "Paul-Werner"};
 		
+		
+		
 		Wuerfel wuerfel = new Wuerfel(1,6);
 		
-		int zahl = IOTools.readInteger("Was für eine Zahl? ")
-		System.out
+		WuerfelSpielDialog.getSpielregeln();
+		
+		int anzahl = WuerfelSpielDialog.getAnzahl();
+		
+		System.out.println(anzahl);
+		
+		int zahl = IOTools.readInteger("Was für eine Zahl? ");
 	}
 
 }

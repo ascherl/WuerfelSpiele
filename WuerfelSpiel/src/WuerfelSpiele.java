@@ -4,13 +4,15 @@
  * 
  */
 public class WuerfelSpiele {
-	
-	public class 
+
 	
 	public class neuesSpiel {
+		
+		int anzahl = WuerfelSpielDialog.getAnzahl();
+		
 		// create new player for each input
-		for(int i=0; i <= spieler.length ; i++) {
-			Spieler Spieler_i = new Spieler(); 
+		for(int i=0; i <= spieler.anzahl ; i++) {
+			Spieler Spieler_i = addSpieler(); 
 		}
 	}
 	
