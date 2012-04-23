@@ -21,9 +21,12 @@ public static int setVariante() {
 	
 	}
 
-public static int setSpielerNamen {
+public static String setSpielerNamen {
 	for( int i = 0; i < WuerfelSpielDialog.getAnzahl(); i++){
 		spieler[ i] = new Spieler();
+		
+
+		
 	}
 }
 
