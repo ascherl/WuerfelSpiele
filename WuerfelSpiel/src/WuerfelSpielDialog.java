@@ -2,8 +2,8 @@ import Tools.IO.*;
 
 public class WuerfelSpielDialog {
 
-private int rundenanzahl;
-private int anzahl;
+private static int rundenanzahl;
+private static int anzahl;
 
 
 
@@ -24,12 +24,12 @@ public static int setVariante() {
 	return variante;
 }
 
-public int getRundenanzahl() {
+public static int getRundenanzahl() {
 	return rundenanzahl;
 
 }
 
-public int getAnzahl() {
+public static int getAnzahl() {
 	return anzahl;
 	}
 

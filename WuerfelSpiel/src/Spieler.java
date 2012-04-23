@@ -1,4 +1,3 @@
-// Spieler.java                                 JG 2012
 
 import Tools.IO.*;                          // Eingaben
 
@@ -14,44 +13,29 @@ public class Spieler
 /**
  * Name des Spielers.
  */
-  String name = "";
+ public String name = "";
+  private int punkte;
   
   
   public String getName() {
 	  return name;
   }
-
-
-
-/* ------------------------------------------------- */
-                                            // Programm
-/**
- * Test der Klasse Spieler
- */
-  public static void addSpieler()
+  
+  public int wuerfeln( Wuerfel wuerfel)
   {
-
-                  // Erzeugen eines Feldes von Spielern
-    Spieler[] spieler = new Spieler[ WuerfelSpielDialog.setAnzahl()];
-
-  // Bereitstellen des Datenspeichers für jeden Spieler
-    for( int i = 0; i < spieler.length; i++)
-      spieler[ i] = new Spieler();
-
-                           // Einlesen der Spielerdaten
-    for( int i = 0; i < spieler.length; i++)
-    {
-      System.out.println( "Spieler "+ (i + 1));
-      spieler[ i].name
-      = IOTools.readLine( "Wie ist Dein Vorname? ");
-     
-    }
-
-           // Auflisten aller eingelesenen Spielerdaten
-    System.out.println( "Es spielen mit: ");
-    for( int i = 0; i < spieler.length; i++)
-      System.out.println
-      ( "Spieler "+ (i + 1) + " " + 
-      spieler[ i].name);
+    return wuerfel.wuerfeln();
+  }
+  
+  public int addPunkte( int punkte)
+  {
+    this.punkte += punkte;
+    return this.punkte;
   }
 }
+
+
+
+
+
+
+
