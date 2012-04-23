@@ -8,13 +8,13 @@ public class WuerfelSpiele {
 	
 	public class neuesSpiel {
 		
-		int anzahl = WuerfelSpielDialog.getAnzahl();
+		// Abfrage Spieleranzahl
+		WuerfelSpielDialog.setAnzahl();
 		
-		// create new player for each input
-		for(int i=0; i <= spieler.anzahl ; i++) {
-			Spieler Spieler_i = addSpieler(); 
-		}
-	}
+		// Spielerfeld initialisieren
+		spieler[ WuerfelSpielDialog.getAnzahl()];
+		
+		// Abfrage Spielernamen
 	
 	public class wuerfeln {
 		
