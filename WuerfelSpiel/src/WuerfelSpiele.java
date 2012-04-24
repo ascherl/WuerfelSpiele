@@ -7,10 +7,14 @@ import Tools.IO.IOTools;
  */
 public class WuerfelSpiele {
 
-	public static void main ( String[] args)
-	  {
-		  Wuerfel wuerfel = new Wuerfel();
+	public static void main ( String[] args) {
+		do {
+		Wuerfel wuerfel = new Wuerfel();
 
+		WuerfelSpielDialog.getSpielregeln();
+		  
+		  int variante = WuerfelSpielDialog.setVariante();
+		  
 	                  // Erzeugen eines Feldes von Spielern
 	    Spieler[] spieler = new Spieler[ WuerfelSpielDialog.setAnzahl()];
 
@@ -48,17 +52,21 @@ public class WuerfelSpiele {
 	                          + " wuerfeln (ENTER)");
 
 	        int augen =spieler[ dran].wuerfeln( wuerfel);
-	        int punkte = spieler[ dran].addPunkte( augen);
-
-	      System.out.println( augen + " -> " + punkte);
+	        
+	        System.out.println(spieler[ dran].name + " hat " + augen + " gewuerfelt.");
+	       
+	        
+	        spieler[ dran].auswertung(runde, runden, augen, variante);
+	        
 	      }
 
 	      System.out.println();
+	     
 	      
 	      
-	      
-	  }
+	    }
+		
 	  
-	  }
-	
+	  }while(IOTools.readBoolean("Nochmal Spielen? (true / false) ") == true);
+	}
 }

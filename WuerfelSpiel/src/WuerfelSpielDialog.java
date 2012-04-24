@@ -2,9 +2,9 @@ import Tools.IO.*;
 
 public class WuerfelSpielDialog {
 
-private static int rundenanzahl;
+public static int rundenanzahl;
 private static int anzahl;
-
+private static int variante;
 
 
 public static int setAnzahl() {
@@ -33,6 +33,13 @@ public static int getAnzahl() {
 	return anzahl;
 	}
 
+public static int getVariante() {
+	return variante;
+}
+
+public static void Auswertung(String name, int ergebnis){
+	System.out.println(name + ", Du hast aktuell " + ergebnis + " Punkte!");
+}
 
 
 public static void getSpielregeln() {
