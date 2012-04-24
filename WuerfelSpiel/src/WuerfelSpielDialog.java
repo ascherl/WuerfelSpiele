@@ -17,7 +17,7 @@ public static int setAnzahl() {
 
 /**
  * Fragt die Rundenanzahl vom Benutzer ab.
- * @return
+ * @return"
  */
 public static int setRundenanzahl() {
 	int rundenanzahl = IOTools.readInteger
